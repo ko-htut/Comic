@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comics-episodes",
+      "handler": "comics-episode.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comics-episodes/count",
+      "handler": "comics-episode.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comics-episodes/:id",
+      "handler": "comics-episode.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comics-episodes",
+      "handler": "comics-episode.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comics-episodes/:id",
+      "handler": "comics-episode.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comics-episodes/:id",
+      "handler": "comics-episode.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

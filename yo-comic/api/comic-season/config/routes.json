@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comic-seasons",
+      "handler": "comic-season.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comic-seasons/count",
+      "handler": "comic-season.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comic-seasons/:id",
+      "handler": "comic-season.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comic-seasons",
+      "handler": "comic-season.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comic-seasons/:id",
+      "handler": "comic-season.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comic-seasons/:id",
+      "handler": "comic-season.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comics_episodes",
+  "info": {
+    "name": "comics_episode"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "zip": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "comic_season": {
+      "model": "comic-season",
+      "via": "comics_episode"
+    }
+  }
+}

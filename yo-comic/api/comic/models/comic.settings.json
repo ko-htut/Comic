@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comics",
+  "info": {
+    "name": "comic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "category"
+    },
+    "page": {
+      "model": "page"
+    },
+    "comic_seasons": {
+      "collection": "comic-season",
+      "via": "comic"
+    }
+  }
+}

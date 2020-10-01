@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comic_seasons",
+  "info": {
+    "name": "comic_season"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "review": {
+      "type": "text"
+    },
+    "release": {
+      "type": "date"
+    },
+    "comic": {
+      "via": "comic_seasons",
+      "model": "comic"
+    },
+    "comics_episode": {
+      "via": "comic_season",
+      "model": "comics-episode"
+    }
+  }
+}
